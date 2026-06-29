@@ -1,0 +1,20 @@
+name: ImperioBoard
+version: 2.0.0
+main: com.hask.board.HaskBoard
+author: HaskDev
+description: Scoreboard configuravel via YML
+softdepend: [Vault, HaskCash, Factions, PlaceholderAPI, mcMMO]
+
+commands:
+  haskboard:
+    description: Comando do HaskBoard
+    aliases: [hb]
+    permission: haskboard.admin
+
+permissions:
+  haskboard.see:
+    description: Permite ver o scoreboard
+    default: true
+  haskboard.admin:
+    description: Permite recarregar o scoreboard
+    default: op

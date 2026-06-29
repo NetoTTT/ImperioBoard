@@ -1,0 +1,25 @@
+# HaskBoardV2 - Scoreboard do Servidor
+# Edite este arquivo e use /hb reload para aplicar
+#
+# Placeholders:
+#   {player} {online} {max_online} {coins} {cash}
+#   {faction} {tag} {power} {power_max} {zona} {zona_dono}
+#   {papi_NOME} (PlaceholderAPI)
+
+title: "&6&lIMPERIO HOME"
+update-ticks: 10
+
+lines:
+  - "&7&m-----------------------"
+  - " &7Jogador: &f{player}"
+  - " {zona}"
+  - "&7&m-----------------------"
+  - " &7Faccao: &f{tag}"
+  - " &7Poder: &e{power}&7/&e{power_max}"
+  - " &7Terras: &e{territorios}"
+  - "&7&m-----------------------"
+  - " &7Coins: &6{coins}"
+  - " &7Cash: &6{cash}"
+  - "&7&m-----------------------"
+  - " &f{online}&7/&f{max_online} &7Online"
+  - " &7Site: &esualoja.com"
