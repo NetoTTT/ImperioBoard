@@ -1,49 +1,49 @@
 # ImperioBoard
 
-Scoreboard configurável via YML para Spigot 1.8.8.
+Configurable YML-driven scoreboard for Spigot 1.8.8.
 
-## Funcionalidades
+## Features
 
-- Scoreboard lateral totalmente configurável via `config.yml`
-- Placeholders nativos: `{player}`, `{coins}`, `{cash}`, `{faction}`, `{tag}`, `{power}`, `{zona}`, `{territorios}`
-- Placeholders do PlaceholderAPI via `{papi_NOME}`
-- Suporte a Factions (SafeZone, WarZone, Wilderness)
-- Atualização automática a cada N ticks
-- Sem flicker — reusa o mesmo scoreboard
+- Fully customizable sidebar via `config.yml`
+- Native placeholders: `{player}`, `{coins}`, `{cash}`, `{faction}`, `{tag}`, `{power}`, `{zona}`, `{territorios}`
+- PlaceholderAPI support via `{papi_NAME}`
+- Factions support (SafeZone, WarZone, Wilderness)
+- Auto-updates every N ticks
+- No flicker — reuses the same scoreboard object
 
-## Comandos
+## Commands
 
-| Comando | Descrição |
-|---------|-----------|
-| `/hb reload` | Recarrega o config.yml |
-| `/hb debug` | Debug das zonas/facções |
+| Command | Description |
+|---------|-------------|
+| `/hb reload` | Reload config.yml |
+| `/hb debug` | Zone/faction debug info |
 
 ## Config
 
 `plugins/ImperioBoard/config.yml`
 
 ```yaml
-title: "&6&lIMPERIO HOME"
+title: "&6&lMY SERVER"
 update-ticks: 10
 lines:
   - "&7&m-----------------------"
-  - " &7Jogador: &f{player}"
+  - " &7Player: &f{player}"
   - " {zona}"
   - "..."
 ```
 
 ## Placeholders
 
-| Placeholder | Descrição |
-|-------------|-----------|
-| `{player}` | Nome do jogador |
-| `{online}` | Jogadores online |
-| `{coins}` | Saldo Vault |
-| `{cash}` | Saldo HaskCash |
-| `{faction}` | Nome da facção |
-| `{tag}` | Tag da facção |
-| `{power}` | Poder atual |
-| `{power_max}` | Poder máximo |
-| `{zona}` | Território atual |
-| `{territorios}` | Quantidade de terras |
-| `{papi_NOME}` | PlaceholderAPI |
+| Placeholder | Description |
+|-------------|-------------|
+| `{player}` | Player name |
+| `{online}` | Online players |
+| `{coins}` | Vault balance |
+| `{cash}` | HaskCash balance |
+| `{faction}` | Faction name |
+| `{tag}` | Faction tag |
+| `{power}` | Current power |
+| `{power_max}` | Max power |
+| `{zona}` | Current territory |
+| `{territorios}` | Land count |
+| `{papi_NAME}` | PlaceholderAPI |
